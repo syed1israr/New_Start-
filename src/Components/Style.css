@@ -1,5 +1,6 @@
 *{
     font-family: Roboto;
+    transition: all 0.19s ease-in-out;
 }
 html,body{
     width: 100%;
@@ -17,6 +18,7 @@ html,body{
     width: 10%;
     height: 50%;
     margin-left: 90px;
+  
 }
 .logo>img{
     width: 100%;
@@ -27,27 +29,30 @@ ul{
     align-items: center;
     width: 20%;
     gap: 20px;
+ 
 }
 input{
     width: 60%;
     border: 2px solid black;
-    margin-left: 160px;
-    border-radius: 20px;
+    margin-left: 15%;
+    border-radius: 5px;
     padding-left: 12px;
 }
-.Search-btn{
+.Search_btn{
     border: 2px solid black;
     margin-left: 20px;
     padding: 2px 4px ;
-    border-radius: 20px;
+    border-radius: 5px;
+    
 }
 .Card{
     margin-top: 5%;
-    margin-left: 5%;
+    margin-left: 8%;
     transition: all 0.19s ease-in-out;
+    
     border-radius: 20px;
-    width: 20rem;
-    height: 23rem;
+    width: 22rem;
+    height: 25rem;
 
 }
 .Card:hover{
@@ -73,14 +78,16 @@ input{
     object-fit: cover;
     border-radius: 8px;
     margin-top: 15px;
+    
 }
 .left_side_card{
     width: 56%;
     margin-left: 6px;
 }
 .food_name{
-    font-size: 25px;
+    font-size: 19px;
     margin-left: 10px;
+    overflow: hidden;
 }
 .food_description{
     font-size: 13px;
@@ -92,7 +99,7 @@ input{
     color: white;
     width: 60%;
     margin-top: 4px;
-    margin-left: 25px;
+    margin-left: 22px;
     border-radius: 8px;
     padding-left: 12px;
 }
@@ -104,7 +111,8 @@ input{
 }
 .Time{
     font-size: 13px;
-    margin-left: 50px;
+    margin-left: 39px;
+    margin-bottom: 5px;
 }
 .right_side_card{
     margin-top: 5.5px;
