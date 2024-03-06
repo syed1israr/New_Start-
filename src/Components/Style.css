@@ -1,5 +1,5 @@
 *{
-    font-family: Roboto;
+    font-family: 'General Sans';
     transition: all 0.19s ease-in-out;
 }
 html,body{
@@ -98,7 +98,7 @@ input{
     background-color: green;
     color: white;
     width: 60%;
-    margin-top: 4px;
+    margin-top: 6px;
     margin-left: 22px;
     border-radius: 8px;
     padding-left: 12px;
