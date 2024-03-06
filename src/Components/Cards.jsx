@@ -6,16 +6,16 @@ const Card=(props)=>{
 
     return(
         <>
-             <div className="Card">
+             <div className="Card overflow-hidden">
             <div className="image"><img src={`${CDN_IMG_URL}/${cloudinaryImageId}`} alt="" /></div>
             <div className="description_section">
             <div className="left_side_card">
              <div className="food_name">{name}</div>
-            <div className="food_description">{cuisines}</div>
+            <div className="food_description">{cuisines.join(" ,")}</div>
             </div>
             <div className="right_side_card">
             <div className="Foot_rating">{avgRating}★</div>
-            <div className="Food_price">{costForTwo}$ for two </div>
+            <div className="Food_price">{costForTwo}</div>
             <div className="Time">{deliveryTime}min</div>
             </div>
             </div>

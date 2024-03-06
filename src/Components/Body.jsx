@@ -1,3 +1,4 @@
+
 import Card from "./Cards";
 import "./Style.css";
 import { useEffect, useState } from "react";
@@ -23,9 +24,9 @@ const Body = () => {
 
       if (restaurantsData) {
         setRestaurants(restaurantsData);
-        setFilteredRestaurants(restaurantsData); // Initially display all restaurants
+        setFilteredRestaurants(restaurantsData);
       } else {
-        // Handle cases where the data structure might be different
+       
         console.error("Restaurants data not found in expected format");
       }
     }
@@ -48,7 +49,7 @@ const Body = () => {
     );
   }
 
-  return (
+  return  (
     <>
       <input type="text" onChange={(e) => setSearchText(e.target.value)} />
       <button className="Search_btn mt-3" onClick={filterRestaurants}>
@@ -59,11 +60,11 @@ const Body = () => {
       </button>
       <div className="flex flex-wrap">
         {filteredRestaurants.map((restaurant) => (
-          <Card key={restaurant.id} details={restaurant.info} />
+          <Card key={restaurant.info.id} details={restaurant.info} />
         ))}
       </div>
     </>
-  );
+  ) 
 };
 
 export default Body;
