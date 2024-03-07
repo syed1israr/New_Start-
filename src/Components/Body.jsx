@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import Card from "./Cards";
 import "./Style.css";
 import { useEffect, useState } from "react";
@@ -58,9 +59,10 @@ const Body = () => {
       <button className="Search_btn mt-3" onClick={TopRated}>
         Top Rated
       </button>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap  gap-x-[90px] ml-[5%] p-[5%] ">
         {filteredRestaurants.map((restaurant) => (
-          <Card key={restaurant.info.id} details={restaurant.info} />
+          <Link to={`/restaurant/${restaurant.info.id}`}> <Card key={restaurant.info.id} details={restaurant.info} />
+          </Link>
         ))}
       </div>
     </>
